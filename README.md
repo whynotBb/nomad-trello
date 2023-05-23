@@ -1,3 +1,9 @@
+- react-beautiful-dnd
+  npm i react-beautiful-dnd
+  npm i --save-dev @types/react-beautiful-dnd
+  https://github.com/LeeHyungGeun/react-beautiful-dnd-kr
+  https://react-beautiful-dnd.netlify.app/?path=/story/single-vertical-list--large-data-set
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
