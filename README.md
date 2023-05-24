@@ -1,5 +1,6 @@
 - react-beautiful-dnd
   npm i react-beautiful-dnd
+  npm i react-beautiful-dnd --legacy-peer-deps
   npm i --save-dev @types/react-beautiful-dnd
   https://github.com/LeeHyungGeun/react-beautiful-dnd-kr
   https://react-beautiful-dnd.netlify.app/?path=/story/single-vertical-list--large-data-set
