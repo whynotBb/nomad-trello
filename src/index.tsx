@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { createGlobalStyle } from "styled-components";
 import { theme } from "./theme.ts";
 import App from "./App.tsx";
+import { RecoilRoot } from "recoil";
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
@@ -60,9 +61,9 @@ table {
 body {
   font-weight: 300;
   font-family: 'Source Sans Pro', sans-serif;
-  color:${(props) => props.theme.white.darker};
+  color:black;
   line-height: 1.2;
-  background-color: black;
+  background-color: ${(props) => props.theme.bgColor};
 }
 a {
   text-decoration:none;
@@ -76,9 +77,11 @@ const root = ReactDOM.createRoot(
 
 root.render(
   // <React.StrictMode>
-  <ThemeProvider theme={theme}>
-    <GlobalStyle />
-    <App />
-  </ThemeProvider>
+  <RecoilRoot>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <App />
+    </ThemeProvider>
+  </RecoilRoot>
   // </React.StrictMode>
 );
