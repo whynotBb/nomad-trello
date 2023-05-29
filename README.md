@@ -5,6 +5,13 @@
   https://github.com/LeeHyungGeun/react-beautiful-dnd-kr
   https://react-beautiful-dnd.netlify.app/?path=/story/single-vertical-list--large-data-set
 
+object 는 map 을 이용 할 수 없다
+
+- Object.keys(objectName)=> object 의 key 만 뽑아냄
+- Object.value(objectName)=> value 만 뽑아냄
+
+* Object. 용법 찾아보기
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
