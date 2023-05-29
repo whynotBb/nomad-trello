@@ -12,6 +12,8 @@ object 는 map 을 이용 할 수 없다
 
 * Object. 용법 찾아보기
 
+{변수or 숫자 + ""} number를 -> string 으로 변환
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
