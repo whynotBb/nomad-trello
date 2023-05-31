@@ -14,6 +14,15 @@ object 는 map 을 이용 할 수 없다
 
 {변수or 숫자 + ""} number를 -> string 으로 변환
 
+### code challenge
+
+-[ ] style
+
+- local storage 저장
+- 삭제, 수정, 쓰레기통
+- 보드 추가
+- 보드 순서 변경
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
