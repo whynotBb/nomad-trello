@@ -17,7 +17,8 @@ const Wrapper = styled.div`
   overflow: hidden;
 `;
 const Title = styled.h2`
-  text-align: center;
+  text-align: left;
+  padding: 0 30px;
   font-weight: 600;
   margin-bottom: 10px;
   font-size: 18px;
@@ -45,8 +46,16 @@ interface IBoardProps {
 
 const Form = styled.form`
   width: 100%;
+  padding: 0px 20px;
   input {
     width: 100%;
+    height: 34px;
+    padding: 0 15px;
+    border-radius: 17px;
+    border: 1px solid #ddd;
+    &:focus {
+      outline: none;
+    }
   }
 `;
 interface IForm {
