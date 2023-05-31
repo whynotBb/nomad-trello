@@ -1,14 +1,9 @@
 import React from "react";
-import {
-  DragDropContext,
-  Draggable,
-  Droppable,
-  DropResult,
-} from "react-beautiful-dnd";
+import { DragDropContext, DropResult } from "react-beautiful-dnd";
 import { useRecoilState } from "recoil";
 import styled from "styled-components";
-import { toDoState } from "./atom.tsx";
-import Board from "./Components/Board.tsx";
+import { toDoState } from "./atom";
+import Board from "./Components/Board";
 
 const Wrapper = styled.div`
   display: flex;
@@ -38,7 +33,7 @@ function App() {
       setToDos((allBoards) => {
         const boardCopy = [...allBoards[source.droppableId]];
         boardCopy.splice(source.index, 1);
-        boardCopy.splice(destination?.index, 0, draggableId);
+        // boardCopy.splice(destination?.index, 0, draggableId);
         return {
           ...allBoards,
           [source.droppableId]: boardCopy,
@@ -51,7 +46,7 @@ function App() {
         const sourceBoard = [...allBoards[source.droppableId]];
         const destinationBoard = [...allBoards[destination.droppableId]];
         sourceBoard.splice(source.index, 1);
-        destinationBoard.splice(destination.index, 0, draggableId);
+        // destinationBoard.splice(destination.index, 0, draggableId);
         return {
           ...allBoards,
           [source.droppableId]: sourceBoard,

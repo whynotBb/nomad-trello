@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import { ThemeProvider } from "styled-components";
 import { createGlobalStyle } from "styled-components";
-import { theme } from "./theme.ts";
-import App from "./App.tsx";
+import { theme } from "./theme";
+import App from "./App";
 import { RecoilRoot } from "recoil";
 
 const GlobalStyle = createGlobalStyle`

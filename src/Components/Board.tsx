@@ -1,9 +1,9 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Droppable } from "react-beautiful-dnd";
-import DragabbleCard from "./DragabbleCard.tsx";
+import DragabbleCard from "./DragabbleCard";
 import styled from "styled-components";
-import { ITodo } from "../atom.js";
+import { ITodo } from "../atom";
 
 const Wrapper = styled.div`
   width: 300px;
